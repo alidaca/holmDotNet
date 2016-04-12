@@ -1,0 +1,76 @@
+#about
+  .section-wrap
+    max-width: 560px
+    margin-left: auto
+    margin-right: auto
+
+    .title
+      margin: 0 0 20px 0
+      // font-size: 30px
+
+
+    .media
+      padding: 0
+      margin: 0
+      display: flex
+      flex-direction: flex-start
+      align-items: center
+      text-align: left
+
+      h5
+        font-weight: 200
+
+
+    img
+      width: 120px
+      height: 120px
+      border: 2px solid $white
+      border-radius: 50%
+      margin-right: 25px
+
+    .social-media-icons
+      display: none
+      padding: 0
+      margin: 10px auto 0px 144px
+
+      li
+        display: inline
+
+      img
+        width: 30px
+        height: 30px
+
+//media queries
+@media (max-width:865px)
+  #about
+    // width: auto
+    margin-left: auto
+    margin-right: auto
+
+    .section-wrap
+      .social-media-icons
+        display: block
+
+@media (max-width:614px)
+  #about
+    .section-wrap
+
+      .title
+        // font-size: 20px
+
+      .media
+        display: block
+
+        img
+          width: 100px
+          height: 100px
+
+        h5
+          font-size: 14px
+
+      .social-media-icons
+        margin: 10px
+
+        img
+          width: 25px
+          height: 25px

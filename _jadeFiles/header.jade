@@ -1,0 +1,28 @@
+include mixins
+
+mixin site-nav
+  ul
+    li 
+      img.icon(src="/assets/img/light-bulb.svg") 
+      a(href="#") About Me
+    li 
+      img.icon(src="/assets/img/bubble.svg") 
+      a(href="#") Work
+    li 
+      img.icon(src="/assets/img/plane.svg") 
+      a(href="#") Say Hello
+    
+.header
+  .header-position
+    h1.logo Laura Holm
+
+    nav.site-nav
+      +site-nav
+      
+    ul.social-media-menu
+      +social-media-icons 
+          
+    .mobile-nav-toggle: span
+
+.mobile-nav
+  +site-nav

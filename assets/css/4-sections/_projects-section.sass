@@ -1,0 +1,63 @@
+#projects
+  background: $white
+  .section-wrap
+    max-width: 700px
+    margin-left: auto
+    margin-right: auto
+
+    .title
+      text-align: center
+      color: $gray
+      margin-top: 0
+
+    .projects-gallery
+      margin: 0
+      padding: 0
+      overflow: auto
+      text-align: center
+      // display: flex
+      // flex-wrap: wrap
+      // align-items: space-around
+
+      .project-thumb
+        display: inline-block
+        background:
+          image: url('http://fillmurray.com/120/120')
+          size: cover
+        width: 20%
+        max-width: 120px
+        margin: 5px
+        position: relative
+        overflow: hidden
+
+        &::after
+          content: ""
+          display: block
+          padding-top: 100%
+
+        &:hover .thumb-meta
+          opacity: 1
+          transform: translate(0%, 0%) scale(1)
+
+
+.thumb-meta
+  font-weight: 600
+  padding: 5px
+  background: rgba($orange, .6)
+  color: $gray
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  opacity: 0
+  transform: translate(0%, 100%) scale(0.5)
+  transition: all 300ms ease-in-out
+
+
+@media (max-width:614px)
+  #projects
+    .section-wrap
+      .projects-gallery
+        .project-thumb
+          width: 30%

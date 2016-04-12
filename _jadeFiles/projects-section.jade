@@ -1,0 +1,12 @@
+section#projects
+  .section-wrap
+    h4.title Projects
+    .projects-gallery
+      {% for project in site.data.projects %}
+      a(href="{{ project.link }}" style="background-image: url({{project.background}})").project-thumb
+        .thumb-meta
+          .name {{ project.name }}
+      {% endfor %}
+      
+    
+    

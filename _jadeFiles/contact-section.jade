@@ -1,0 +1,21 @@
+section#contact
+
+  .title Let's work together
+
+    form(method="POST", action="https://formspree.io/l.millevoi@gmail.com")
+      .contact-info
+        label
+          span Your Name
+          input(type="text", name="name")
+        
+        label
+          span Your Email
+          input(type="email", name="_replyto")
+      
+      label 
+        span Your Message
+        textarea(type="text", name="message")
+        
+      input(type="submit", value="Send")
+      input(type="text", name="_gotcha", style="display:none")
+      input(type="hidden" name="_next" value="/thankYou.html")

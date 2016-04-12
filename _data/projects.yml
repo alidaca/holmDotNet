@@ -1,0 +1,39 @@
+- name: Weather App
+  link: #
+  background: /assets/img/projects/weather.jpg
+
+- name: Calculator
+  link: http://alidaca.github.io/JQuery-Calculator/
+  background: /assets/img/projects/calculator.jpg
+
+- name: Tic Tac Toe
+  link: http://alidaca.github.io/Tic-Tac-Toe
+  background: /assets/img/projects/tictactoe.jpg
+
+- name: Pomodoro Timer
+  link: http://alidaca.github.io/Pomodoro-Timer
+  background: /assets/img/projects/timer.jpg
+
+- name: Simon Says
+  link: http://alidaca.github.io/simon-says/
+  background: /assets/img/projects/simon.jpg
+
+- name: Mondrian Quote Generator
+  link: http://alidaca.github.io/Mondrian-quote-generator/
+  background: /assets/img/projects/mondrian.jpg
+
+- name: TwitchTV App
+  link: http://alidaca.github.io/TwitchTV-app/
+  background: /assets/img/projects/tv.jpg
+
+- name: WIkipedia Viewer
+  link: http://alidaca.github.io/Wikipedia-viewer/
+  background: /assets/img/projects/wikipedia.jpg
+
+- name: Timestamp microservice
+  link: https://intense-sands-58262.herokuapp.com/
+  background: /assets/img/projects/timestamp.jpg
+
+- name: Header Parser
+  link: https://fast-bastion-47134.herokuapp.com/
+  background: /assets/img/projects/parser.jpg

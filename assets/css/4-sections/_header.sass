@@ -1,0 +1,178 @@
+@import "0-tools/_vars";
+
+.header
+  width: 124px
+  // height: 100vh
+  padding: 20px
+  border-right: 1px solid $gray
+  text-align: right
+  font-size: 14px
+  font-weight: 600
+  text-transform: uppercase
+
+  .header-position
+    width: 124px
+    height: 100vh
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    padding: 20px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+
+  .logo
+    +hide-text
+    background:
+      image: url(/assets/img/logo.svg)
+      repeat: no-repeat
+      size: contain
+      position: 100% 0
+    height: 59px
+    min-height: 59px
+    // max-width: 124px
+
+
+  h1
+    margin: 0
+    padding: 0
+
+  .site-nav ul
+    list-style: none
+
+
+    li
+      margin-bottom: 25px
+
+      &:last-child
+        margin-bottom: 0px
+
+    img.icon
+      float: right
+
+    a
+      clear: right
+      display: block
+
+  ul.social-media-menu
+    list-style: none
+    padding-bottom: 20px
+
+    li
+      margin-bottom: 10px
+
+      &:last-child
+        margin-bottom: 0px
+
+  .mobile-nav-toggle
+    display: none
+    width: 50px
+    height: 50px
+    // background: pink
+    align-items: center
+    cursor: pointer
+
+    span,
+    span:before,
+    span:after
+      content: ""
+      display: block
+      height: 2px
+      width: 50px
+      background: $gray
+      position: relative
+
+    span:before
+      top: 13px
+      transform-origin: top left
+      transition: transform 0.3s, width 0.3s, top 0.3s
+
+    span:after
+      bottom: 15px
+      transform-origin: bottom left
+      transition: transform 0.3s, width 0.3s, top 0.3s
+
+    &:hover span,
+    &:hover span:before,
+    &:hover span:after
+      background: $orange
+
+    //mobile menu animation
+  .mobile-nav-toggle.is-open
+    span:before,
+    span:after
+      width: 40%
+
+    span:before
+      top: 0
+      transform: translateX(38px) translateY(-13px) rotate(45deg)
+
+    span:after
+      bottom: 0
+      transform: translateX(38px) translateY(13px) rotate(-45deg)
+
+.mobile-nav
+  display: none
+  position: absolute
+  right: -9999px
+  text-align: left
+  transition: all 0.5s ease-in-out
+
+  ul
+    list-style: none
+    text-transform: uppercase
+    margin: 0
+    width: auto
+    padding: 10px 20px
+    background: $white
+    border: 1px solid $gray
+
+    li
+      border: solid 1px $white
+      margin-bottom: 10px
+
+      &:hover
+        border-bottom: 1px solid
+
+      a:hover
+        color: $gray
+
+    img
+      // display: none
+      height: 20px
+      margin-right: 20px
+
+.mobile-nav.is-open
+  right: 0
+
+//media queries
+
+@media (max-width:865px)
+  .header
+    width: auto
+
+    .header-position
+      position: relative
+      height: auto
+      width: auto
+      flex-direction: row
+      align-items: center
+
+    .logo
+      display:block
+      min-width: 65px
+      max-width: 86px
+      background-position: left
+
+    .site-nav,
+    .social-media-menu
+      display: none
+
+    .mobile-nav-toggle
+      display: flex
+
+  .mobile-nav
+    display: block
