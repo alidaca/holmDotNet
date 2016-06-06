@@ -3,13 +3,16 @@ include mixins
 mixin site-nav
   ul
     li 
-      img.icon(src="/assets/img/light-bulb.svg") 
+      //- img.icon(src="/assets/img/light-bulb.svg") 
+      .icon: i.fa.fa-lightbulb-o(aria-hidden="true")
       a(href="#about") About Me
     li 
-      img.icon(src="/assets/img/bubble.svg") 
+      .icon: i.fa.fa-comment-o(aria-hidden="true")
+      //- img.icon(src="/assets/img/bubble.svg") 
       a(href="#projects") Work
     li 
-      img.icon(src="/assets/img/plane.svg") 
+      .icon: i.fa.fa-paper-plane-o(aria-hidden="true")
+      //- img.icon(src="/assets/img/plane.svg") 
       a(href="#contact") Say Hello
     
 .header
